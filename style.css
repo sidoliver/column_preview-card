@@ -1,0 +1,108 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px heigt 810px */
+
+:root {
+    --clr-bright-orange: hsl(31, 77%, 52%);
+    --clr-dark-cyan: hsl(184, 100%, 22%);
+    --clr-very-dark-cyan: hsl(179, 100%, 13%);
+    /* paragraph */
+    --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --clr-very-light-gray: hsl(0, 0%, 95%);
+    --ff-primary: 'Big Shoulders Display', cursive;
+    --ff-secondary: 'Lexend Deca', sans-serif;
+
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*
+===============
+project style
+===================
+ */
+.container {
+    width: 922px;
+    height: 505px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+}
+h1 {
+    margin-bottom: 37px;
+    color: var(--clr-very-light-gray);
+    font-family: var(--ff-primary);
+}
+p {
+    margin-bottom: 80px;
+    padding-right: 20px;
+    font-family: var(--ff-secondary);
+    color: var(--clr-very-light-gray);
+    font-size: 15px;
+
+}
+.box {
+    padding: 37px 44px 35px 44px;
+    
+}
+.box-1 {
+    background-color:var(--clr-bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+.box-2 {
+    background-color: var(--clr-dark-cyan);
+}
+.box-3 {
+    background-color: var(--clr-very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+.image {
+    margin-bottom: 38px;
+}
+button {
+    font-family: var(--ff-secondary);
+    font-size: 15px;
+    padding: 14px 30px;
+    border-radius: 30px;
+    border-color: transparent;
+    /* margin-left: 40px; */
+}
+.btn-1 {
+    color:hsl(31, 77%, 52%);
+}
+.btn-2 {
+    color: var(--clr-dark-cyan);
+}
+.btn-3 {
+    color:var(--clr-very-dark-cyan);
+}
+button:hover {
+    background-color: transparent;
+    color:hsl(0, 0%, 95%);
+    border-color:hsl(0, 0%, 95%);
+    box-shadow: 0px 0px 0px transparent;
+}
