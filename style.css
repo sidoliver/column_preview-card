@@ -39,8 +39,8 @@ ul {
 a {
   text-decoration: none;
 }
+/* 
 
-/*
 ===============
 project style
 ===================
@@ -83,7 +83,7 @@ p {
 .image {
     margin-bottom: 38px;
 }
-button {
+.btn {
     font-family: var(--ff-secondary);
     font-size: 15px;
     padding: 14px 30px;
@@ -100,9 +100,30 @@ button {
 .btn-3 {
     color:var(--clr-very-dark-cyan);
 }
-button:hover {
+.btn:hover {
     background-color: transparent;
     color:hsl(0, 0%, 95%);
+    border: 2px solid transparent;
     border-color:hsl(0, 0%, 95%);
     box-shadow: 0px 0px 0px transparent;
+}
+
+/* ===============
+mobile responsive 
+===================
+*/
+@media only screen and (max-width: 700px){
+    
+    .container {
+        width: 310px;
+        height: 220vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .box-1 {
+        border-radius: 10px 10px 0 0 ;
+    }
+    .box-3 {
+        border-radius: 0 0 10px 10px;
+    }
 }
